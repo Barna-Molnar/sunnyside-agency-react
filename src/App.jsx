@@ -1,10 +1,11 @@
 import React from 'react';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="font-barlow">
-      <h1>hello from the app </h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 

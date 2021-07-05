@@ -23,10 +23,10 @@ const GlobalStyles = createGlobalStyle`
 
   }
 
-  .font-barlow {
+  .font-b {
      font-family: 'Barlow', sans-serif;
   }
-  .font-fraunces {
+  .font-f {
      font-family: 'Fraunces', serif;
   }
   html{
@@ -50,7 +50,7 @@ const GlobalStyles = createGlobalStyle`
   }
   .container {
     max-width: 1440px;
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
   }
 /* Smooth Scroll  */
