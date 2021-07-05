@@ -1,8 +1,8 @@
-import './App.scss';
+import React from 'react';
 
 function App() {
   return (
-    <div className="App">
+    <div className="font-barlow">
       <h1>hello from the app </h1>
     </div>
   );
