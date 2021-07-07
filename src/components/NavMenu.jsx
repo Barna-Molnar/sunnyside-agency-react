@@ -10,7 +10,7 @@ const NavmenuStyles = styled.div`
   }
   ul {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 3rem;
     li a {
       color: var(--white);
