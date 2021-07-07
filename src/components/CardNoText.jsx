@@ -1,19 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import Title from './Title';
 
 const CardStyles = styled.div`
-  padding: 10rem;
   text-align: center;
-  height: 400px;
-  width: 50%;
-  background-color: red;
+  height: 600px;
+  width: 720px;
 `;
 
-export default function Card({ bckImg }) {
+export default function CardNoText({ bckImg }) {
   return (
     <CardStyles>
-      <Title />
+      <img src={bckImg} alt="backgound phot" />
     </CardStyles>
   );
 }
