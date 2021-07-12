@@ -30,19 +30,26 @@ const CardStyles = styled.div`
   button::before {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     right: 0;
     height: 1rem;
-    background-color: yellow;
+    background-color: ${(props) =>
+      props.underLineColor === 'yellow' ? 'var(--yellow)' : 'var(--soft-red)'};
     border-radius: 5px;
     z-index: -100;
   }
 `;
 
-export default function CardNoImg({ title, para, button = 'Learn More' }) {
+export default function CardNoImg({
+  title,
+  para,
+  button = 'Learn More',
+  underLineColor,
+}) {
+  console.log(underLineColor);
   return (
-    <CardStyles>
+    <CardStyles underLineColor={underLineColor}>
       <h2 className="font-f">{title}</h2>
       <p>{para}</p>
       <button className="font-f">{button}</button>

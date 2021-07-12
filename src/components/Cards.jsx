@@ -21,6 +21,7 @@ export default function Cards() {
         para={
           'We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.'
         }
+        underLineColor="yellow"
       />
       <CardNoText bckImg={Egg} />
       <CardNoText bckImg={Cup} />
@@ -29,6 +30,7 @@ export default function Cards() {
         para={
           'Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. '
         }
+        underLineColor="red"
       />
       {/* <Card bckImg={Cherry} title />
       <Card bckImg={Orange} title /> */}
