@@ -15,18 +15,11 @@ const CardMixinStyles = styled.div`
   background: url(${(props) => props.bckImg});
 `;
 
-export default function CardMixin({ bckImg }) {
+export default function CardMixin({ bckImg, title, titleColor, para }) {
   return (
     <CardMixinStyles bckImg={bckImg}>
       {/* <img src={bckImg} alt="backgound phot" /> */}
-      <Title
-        className="title"
-        title={'Graphic Design'}
-        para={
-          'Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.'
-        }
-        titleColor={'var(--dark-cyan-text)'}
-      />
+      <Title title={title} para={para} titleColor={titleColor} />
     </CardMixinStyles>
   );
 }
