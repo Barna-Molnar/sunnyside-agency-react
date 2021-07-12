@@ -7,6 +7,7 @@ import Cherry from '../images/desktop/image-graphic-design.jpg';
 import Orange from '../images/desktop/image-photography.jpg';
 import CardNoText from './CardNoText';
 import CardNoImg from './CardNoImg';
+import CardMixin from './CardMixin';
 
 const CardsStyles = styled.div`
   display: flex;
@@ -34,6 +35,7 @@ export default function Cards() {
       />
       {/* <Card bckImg={Cherry} title />
       <Card bckImg={Orange} title /> */}
+      <CardMixin bckImg={Cherry} />
     </CardsStyles>
   );
 }
