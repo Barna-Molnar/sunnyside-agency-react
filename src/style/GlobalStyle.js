@@ -33,6 +33,19 @@ const GlobalStyles = createGlobalStyle`
     font-size: 10px;
     font-family: 'Roboto Mono';
     
+    
+  }
+
+  body {
+     width: 100vw;
+  margin: 0 auto;
+  }
+  #root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   ul,li{
     list-style: none;

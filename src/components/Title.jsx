@@ -22,7 +22,7 @@ export default function Title({ title, para, titleColor }) {
   return (
     <TitleStyles titleColor={titleColor}>
       <h1 className="font-f">{title}</h1>
-      <p className="font-b">{para}</p>
+      <p className="font-b title-para">{para}</p>
     </TitleStyles>
   );
 }

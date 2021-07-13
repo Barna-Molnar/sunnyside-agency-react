@@ -4,8 +4,10 @@ import styled from 'styled-components';
 const CardStyles = styled.div`
   text-align: start;
   height: 600px;
-  width: 720px;
+  max-width: 720px;
+  min-width: 500px;
   padding: 15rem;
+
   h2 {
     font-size: 4rem;
     margin-bottom: 4rem;
@@ -47,7 +49,6 @@ export default function CardNoImg({
   button = 'Learn More',
   underLineColor,
 }) {
-  console.log(underLineColor);
   return (
     <CardStyles underLineColor={underLineColor}>
       <h2 className="font-f">{title}</h2>

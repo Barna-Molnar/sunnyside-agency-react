@@ -5,7 +5,8 @@ import Title from './Title';
 const CardMixinStyles = styled.div`
   text-align: center;
   height: 600px;
-  width: 720px;
+  max-width: 720px;
+  min-width: 500px;
   position: relative;
   background-color: yellow;
   display: flex;
