@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
     --dark-cyan-text: hsl(167, 40%, 24%);
     --dark-blue-text:  hsl(198, 62%, 26%);
     --dark-cyan-footer: hsl(168, 34%, 41%);
+    --dark-cyan-footer2: hsl(168, 49%, 71%);
 
     --dark-blue-2:hsl(212, 27%, 19%);
     --very-dark-grayish-blue: hsl(213, 9%, 39%);
