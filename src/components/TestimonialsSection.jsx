@@ -8,6 +8,7 @@ import jennie from '../images/icons&photos/image-jennie.jpg';
 const TestimonialsStyles = styled.div`
   padding: 16rem 10rem 8rem 10rem;
   text-align: center;
+  max-width: 1440px;
   .testimonials__title {
     margin-bottom: 1rem;
     text-transform: uppercase;
