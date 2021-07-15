@@ -9,6 +9,7 @@ const TestimonialsStyles = styled.div`
   padding: 16rem 10rem 8rem 10rem;
   text-align: center;
   max-width: 1440px;
+  min-width: 375px;
   .testimonials__title {
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -17,6 +18,17 @@ const TestimonialsStyles = styled.div`
   }
   .testimonials {
     display: flex;
+  }
+  @media only screen and (max-width: 1400px) {
+    padding: 8rem 2rem 4rem 2rem;
+    .testimonials {
+      flex-direction: column;
+    }
+    .testimonials__title {
+      margin-bottom: 8rem;
+      font-size: 1.6rem;
+      font-weight: 900;
+    }
   }
 `;
 

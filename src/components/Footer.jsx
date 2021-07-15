@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Fb from '../images/icons&photos/icon-facebook.svg';
-import Insta from '../images/icons&photos/icon-instagram.svg';
-import Twitter from '../images/icons&photos/icon-twitter.svg';
-import Pinterest from '../images/icons&photos/icon-pinterest.svg';
+
 import {
   GrFacebook,
   GrInstagram,
@@ -12,7 +9,8 @@ import {
 } from 'react-icons/gr';
 
 const FooterStyles = styled.div`
-  width: 1440px;
+  max-width: 1440px;
+  min-width: 375px;
   padding: 6rem 25rem 7rem 25rem;
   text-align: center;
   background-color: var(--dark-cyan-footer2);
@@ -57,6 +55,9 @@ const FooterStyles = styled.div`
       color: var(--white);
     }
   }
+  @media only screen and (max-width: 1400px) {
+    padding: 6rem 2rem 6rem 2rem;
+  }
 `;
 
 export default function Footer() {
@@ -64,21 +65,21 @@ export default function Footer() {
     <FooterStyles>
       <h3 className="font-b">sunnyside</h3>
       <div className="pagesLinks font-b">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/projects">Projects</a>
       </div>
       <div className="social-icons">
-        <a href="#">
+        <a href="http://www.facebook.com">
           <GrFacebook />
         </a>
-        <a href="#">
+        <a href="http://www.instagram.com">
           <GrInstagram />
         </a>
-        <a href="#">
+        <a href="http://www.twitter.com">
           <GrTwitter />
         </a>
-        <a href="#">
+        <a href="http://www.pinterest.com">
           <GrPinterest />
         </a>
       </div>

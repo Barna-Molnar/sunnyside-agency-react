@@ -8,9 +8,16 @@ import SugarCubes from '../images/desktop/image-gallery-sugarcubes.jpg';
 const BannerStyles = styled.div`
   display: flex;
   max-width: 1440px;
+  min-width: 375px;
   img {
     object-fit: cover;
     width: calc(100% / 4);
+  }
+  @media only screen and (max-width: 1400px) {
+    flex-wrap: wrap;
+    img {
+      width: calc(100% / 2);
+    }
   }
 `;
 

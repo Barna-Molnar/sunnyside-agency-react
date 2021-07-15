@@ -12,6 +12,16 @@ const CardsStyles = styled.div`
   .row {
     display: flex;
   }
+  @media only screen and (max-width: 1430px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .row {
+      display: inline-block;
+      width: 100%;
+    }
+  }
 `;
 
 export default function Cards() {
