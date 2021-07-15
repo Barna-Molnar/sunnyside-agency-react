@@ -14,6 +14,12 @@ const CardMixinStyles = styled.div`
   align-items: flex-end;
   padding: 0 15rem 5rem 15rem;
   background: url(${(props) => props.bckImg});
+  @media only screen and (max-width: 1400px) {
+    .title-para {
+      padding: 0 2rem;
+      line-height: 3rem;
+    }
+  } ;
 `;
 
 export default function CardMixin({ bckImg, title, titleColor, para }) {

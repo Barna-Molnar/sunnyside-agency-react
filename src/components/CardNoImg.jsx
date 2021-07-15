@@ -5,7 +5,7 @@ const CardStyles = styled.div`
   text-align: start;
   height: 600px;
   max-width: 720px;
-  min-width: 500px;
+  min-width: 375px;
   padding: 15rem;
 
   h2 {
@@ -40,6 +40,9 @@ const CardStyles = styled.div`
       props.underLineColor === 'yellow' ? 'var(--yellow)' : 'var(--soft-red)'};
     border-radius: 5px;
     z-index: -100;
+  }
+  @media only screen and (max-width: 1440px) {
+    text-align: center;
   }
 `;
 
