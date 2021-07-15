@@ -4,22 +4,28 @@ import Fb from '../images/icons&photos/icon-facebook.svg';
 import Insta from '../images/icons&photos/icon-instagram.svg';
 import Twitter from '../images/icons&photos/icon-twitter.svg';
 import Pinterest from '../images/icons&photos/icon-pinterest.svg';
+import {
+  GrFacebook,
+  GrInstagram,
+  GrPinterest,
+  GrTwitter,
+} from 'react-icons/gr';
 
 const FooterStyles = styled.div`
   width: 1440px;
-  padding: 5rem 25rem;
+  padding: 6rem 25rem 7rem 25rem;
   text-align: center;
   background-color: var(--dark-cyan-footer2);
 
   h3 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
     color: var(--dark-cyan-text);
     opacity: 0.75;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
   .pagesLinks {
-    margin-bottom: 10rem;
+    margin-bottom: 9rem;
     a {
       font-size: 18px;
       font-weight: 600;
@@ -38,18 +44,17 @@ const FooterStyles = styled.div`
   .social-icons {
     a {
       svg {
-        fill: whitesmoke;
+        font-size: 2rem;
+        color: #2c7566;
+        transition: all 0.25s;
       }
     }
     a:not(:last-child) {
       margin-right: 3rem;
     }
-    img:hover {
-      transform: scale(1.2);
-    }
-    img {
-      background-color: red;
-      fill: whitesmoke;
+    svg:hover {
+      transform: scale(1.1);
+      color: var(--white);
     }
   }
 `;
@@ -65,15 +70,17 @@ export default function Footer() {
       </div>
       <div className="social-icons">
         <a href="#">
-          <img src={Fb} alt="" />
+          <GrFacebook />
         </a>
         <a href="#">
-          <img src={Insta} alt="" />
+          <GrInstagram />
         </a>
         <a href="#">
-          <img src={Twitter} alt="" />
+          <GrTwitter />
         </a>
-        <a href="#"></a>
+        <a href="#">
+          <GrPinterest />
+        </a>
       </div>
     </FooterStyles>
   );
