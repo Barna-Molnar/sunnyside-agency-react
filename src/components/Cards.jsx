@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Egg from '../images/desktop/image-transform.jpg';
-import Cup from '../images/desktop/image-stand-out.jpg';
+import EggDesktop from '../images/desktop/image-transform.jpg';
+import EggMobile from '../images/mobile/image-transform.jpg';
+import CupDekstop from '../images/desktop/image-stand-out.jpg';
+import CupMobile from '../images/mobile/image-stand-out.jpg';
 import Cherry from '../images/desktop/image-graphic-design.jpg';
 import Orange from '../images/desktop/image-photography.jpg';
 import CardNoText from './CardNoText';
@@ -19,7 +21,13 @@ const CardsStyles = styled.div`
     align-items: center;
     .row {
       display: inline-block;
+
       width: 100%;
+      max-width: 375px;
+    }
+    .row:nth-child(1) {
+      display: flex;
+      flex-direction: column-reverse;
     }
   }
 `;
@@ -35,10 +43,10 @@ export default function Cards() {
           }
           underLineColor="yellow"
         />
-        <CardNoText bckImg={Egg} />
+        <CardNoText bckImg={[EggDesktop, EggMobile]} />
       </div>
       <div className="row">
-        <CardNoText bckImg={Cup} />
+        <CardNoText bckImg={[CupDekstop, CupMobile]} />
         <CardNoImg
           title={'Stand out to the right audience'}
           para={

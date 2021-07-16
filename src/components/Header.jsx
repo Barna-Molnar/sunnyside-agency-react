@@ -21,6 +21,9 @@ const HeaderStyles = styled.div`
     height: 10rem;
     margin-top: 12rem;
   }
+  @media only screen and (max-width: 1440px) {
+    width: 375px;
+  }
 `;
 
 export default function Header() {

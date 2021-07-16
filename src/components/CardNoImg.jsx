@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const CardStyles = styled.div`
   text-align: start;
-  height: 600px;
+  max-height: 600px;
   max-width: 720px;
   min-width: 375px;
   padding: 15rem;
@@ -13,7 +13,7 @@ const CardStyles = styled.div`
     margin-bottom: 4rem;
   }
   p {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     font-family: sans-serif;
     color: var(--dark-grayish-blue);
@@ -42,7 +42,18 @@ const CardStyles = styled.div`
     z-index: -100;
   }
   @media only screen and (max-width: 1440px) {
+    margin: 0;
+    width: 375px;
     text-align: center;
+    padding: 7rem 3rem;
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      margin-bottom: 3rem;
+    }
   }
 `;
 

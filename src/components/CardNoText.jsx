@@ -1,18 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CardStyles = styled.div`
-  display: flex;
-  flex-shrink: 2;
-  max-height: 600px;
+const CardNoTextStyles = styled.div`
   max-width: 720px;
-  min-width: 500px;
+  max-height: 600px;
+  img {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  @media only screen and (max-width: 1440px) {
+  }
 `;
 export default function CardNoText({ bckImg }) {
-  console.log(bckImg);
+  const [desktop, mobile] = bckImg;
+
   return (
-    <CardStyles bckImg={bckImg}>
-      <img src={bckImg} alt="backgound phot" />
-    </CardStyles>
+    <CardNoTextStyles bckImg={bckImg}>
+      <img
+        className="img"
+        src={mobile}
+        srcSet={`${mobile} 375w, ${desktop} 500w`}
+        alt="backgound phot"
+      />
+    </CardNoTextStyles>
   );
 }

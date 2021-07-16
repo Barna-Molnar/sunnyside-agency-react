@@ -37,6 +37,9 @@ const NavmenuStyles = styled.div`
     color: var(--white);
     background-color: rgba(255, 255, 255, 0.25);
   }
+  @media only screen and (max-width: 1440px) {
+    display: none;
+  }
 `;
 
 export default function NavMenu() {

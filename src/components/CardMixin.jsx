@@ -6,18 +6,20 @@ const CardMixinStyles = styled.div`
   text-align: center;
   height: 600px;
   max-width: 720px;
-  min-width: 500px;
+  min-width: 375px;
   position: relative;
   background-color: yellow;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 0 15rem 5rem 15rem;
+  padding: 0 15rem 4rem 15rem;
   background: url(${(props) => props.bckImg});
   @media only screen and (max-width: 1400px) {
+    background-position: center center;
+    padding: 0 0 3rem 0;
     .title-para {
-      padding: 0 2rem;
       line-height: 3rem;
+      font-size: 16px;
     }
   } ;
 `;
