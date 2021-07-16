@@ -9,8 +9,8 @@ import {
 } from 'react-icons/gr';
 
 const FooterStyles = styled.div`
-  max-width: 1440px;
-  min-width: 375px;
+  width: 1440px;
+
   padding: 6rem 25rem 7rem 25rem;
   text-align: center;
   background-color: var(--dark-cyan-footer2);
@@ -56,6 +56,7 @@ const FooterStyles = styled.div`
     }
   }
   @media only screen and (max-width: 1400px) {
+    width: 375px;
     padding: 6rem 2rem 6rem 2rem;
   }
 `;

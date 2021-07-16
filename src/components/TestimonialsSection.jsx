@@ -20,6 +20,7 @@ const TestimonialsStyles = styled.div`
     display: flex;
   }
   @media only screen and (max-width: 1400px) {
+    width: 375px;
     padding: 8rem 2rem 4rem 2rem;
     .testimonials {
       flex-direction: column;
