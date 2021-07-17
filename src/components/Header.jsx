@@ -4,6 +4,7 @@ import NavMenu from './NavMenu';
 import HeaderImgDesktop from '../images/desktop/image-header.jpg';
 import HeaderImgMobile from '../images/mobile/image-header.jpg';
 import ArrowDownIcon from '../images/icons&photos/icon-arrow-down.svg';
+import MobileMenu from './MobileMenu';
 
 const HeaderStyles = styled.div`
   width: 100%;
@@ -41,6 +42,7 @@ export default function Header() {
   return (
     <HeaderStyles>
       <NavMenu />
+      <MobileMenu />
       <h1 className="font-f">We are Creatives</h1>
       <img src={ArrowDownIcon} alt="" />
     </HeaderStyles>

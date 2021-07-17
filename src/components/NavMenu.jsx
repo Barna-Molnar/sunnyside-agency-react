@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { GrMenu } from 'react-icons/gr';
 import styled from 'styled-components';
 import Hamburger from '../images/icons&photos/icon-hamburger.svg';
+import MobileMenu from './MobileMenu';
+import MobioeMenu from './MobileMenu';
 
 const NavmenuStyles = styled.div`
   padding: 5rem 4rem 0 4rem;
@@ -86,6 +88,7 @@ export default function NavMenu() {
           </li>
         </ul>
       </div>
+      {/* <MobileMenu /> */}
     </NavmenuStyles>
   );
 }
