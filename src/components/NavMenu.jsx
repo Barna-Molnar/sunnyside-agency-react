@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { GrMenu } from 'react-icons/gr';
 import styled from 'styled-components';
-import Hamburger from '../images/icons&photos/icon-hamburger.svg';
-import MobileMenu from './MobileMenu';
-import MobioeMenu from './MobileMenu';
 
 const NavmenuStyles = styled.div`
   padding: 5rem 4rem 0 4rem;
@@ -61,9 +58,7 @@ const NavmenuStyles = styled.div`
   }
 `;
 
-export default function NavMenu() {
-  const [visible, setVisible] = useState(false);
-  console.log(visible, 'burger clicked');
+export default function NavMenu({ setVisible, visible }) {
   return (
     <NavmenuStyles>
       <div className="container ">
@@ -88,7 +83,6 @@ export default function NavMenu() {
           </li>
         </ul>
       </div>
-      {/* <MobileMenu /> */}
     </NavmenuStyles>
   );
 }

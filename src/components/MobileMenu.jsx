@@ -2,12 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const MobileMenuStyles = styled.div`
+  position: absolute;
+  top: 8rem;
   padding: 8rem 0 4rem 0;
-  width: 100%;
-
+  width: calc(375px - 4rem);
   background-color: var(--white);
   z-index: 10000;
   clip-path: polygon(93% 7%, 100% 0, 100% 0, 100% 100%, 0 100%, 0 7%);
+  transition: all 1s ease;
+  opacity: ${(props) => (props.visible ? 1 : 0)};
   .nav-btn {
     display: block;
     background: var(--yellow);
@@ -35,9 +38,9 @@ const MobileMenuStyles = styled.div`
   }
 `;
 
-export default function MobileMenu() {
+export default function MobileMenu({ visible }) {
   return (
-    <MobileMenuStyles>
+    <MobileMenuStyles visible={visible}>
       <ul className="font-b">
         <li>
           <a href="/about">About</a>
