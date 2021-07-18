@@ -14,7 +14,7 @@ const FooterStyles = styled.div`
   text-align: center;
   background-color: var(--dark-cyan-footer2);
 
-  h3 {
+  h2 {
     font-size: 3.5rem;
     font-weight: 800;
     color: var(--dark-cyan-text);
@@ -63,7 +63,7 @@ const FooterStyles = styled.div`
 export default function Footer() {
   return (
     <FooterStyles>
-      <h3 className="font-b">sunnyside</h3>
+      <h2 className="font-b">sunnyside</h2>
       <div className="pagesLinks font-b">
         <a href="/about">About</a>
         <a href="/services">Services</a>
