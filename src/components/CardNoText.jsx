@@ -20,7 +20,7 @@ export default function CardNoText({ bckImg }) {
       <img
         className="img"
         src={mobile}
-        sizes="375px, 500px"
+        sizes="375px, 720px"
         srcSet={`${mobile} 375w, ${desktop} 500w`}
         alt="backgound phot"
       />
