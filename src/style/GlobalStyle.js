@@ -38,8 +38,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-     width: 100vw;
-  margin: 0 auto;
+    width: 100vw;
+    margin: 0 auto;
+   
   }
   #root {
     width: 100%;

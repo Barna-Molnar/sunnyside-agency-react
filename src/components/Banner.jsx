@@ -18,6 +18,7 @@ const BannerStyles = styled.div`
     flex-wrap: wrap;
     img {
       width: calc(100% / 2);
+      height: calc(375px / 2);
     }
   }
 `;

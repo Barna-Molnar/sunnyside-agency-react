@@ -9,6 +9,7 @@ import MobileMenu from './MobileMenu';
 const HeaderStyles = styled.div`
   position: relative;
   width: 100%;
+  max-width: 1440px;
 
   background: url(${HeaderImgDesktop}) no-repeat center / cover;
   text-align: center;

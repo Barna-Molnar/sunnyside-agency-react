@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GrMenu } from 'react-icons/gr';
 import styled from 'styled-components';
+import hamburger from '../images/icons&photos/icon-hamburger.svg';
 
 const NavmenuStyles = styled.div`
   padding: 5rem 4rem 0 4rem;
@@ -8,8 +9,9 @@ const NavmenuStyles = styled.div`
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
-  svg {
+  img {
     display: none;
     color: var(--white);
   }
@@ -47,13 +49,13 @@ const NavmenuStyles = styled.div`
     ul {
       display: none;
     }
+    .hamburger img {
+      display: inline-block;
+      height: 100%;
+      margin: 0;
+    }
     .hamburger {
-      color: white;
-      svg {
-        display: block;
-        font-size: 3rem;
-        fill: white;
-      }
+      height: 2rem;
     }
   }
 `;
@@ -64,7 +66,7 @@ export default function NavMenu({ setVisible, visible }) {
       <div className="container ">
         <h3>sunnyside</h3>
         <div className="hamburger">
-          <GrMenu fill="#fff" onClick={() => setVisible(!visible)} />
+          <img src={hamburger} alt="" onClick={() => setVisible(!visible)} />
         </div>
         <ul className="">
           <li>

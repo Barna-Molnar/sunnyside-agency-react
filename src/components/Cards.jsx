@@ -14,7 +14,7 @@ const CardsStyles = styled.div`
   .row {
     display: flex;
   }
-  @media only screen and (max-width: 1430px) {
+  @media only screen and (max-width: 1440px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
