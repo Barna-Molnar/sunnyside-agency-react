@@ -19,7 +19,7 @@ const TestimonialsStyles = styled.div`
   .testimonials {
     display: flex;
   }
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1440px) {
     width: 375px;
     padding: 8rem 2rem 4rem 2rem;
     .testimonials {

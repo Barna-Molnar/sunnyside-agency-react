@@ -54,7 +54,7 @@ const FooterStyles = styled.div`
       color: var(--white);
     }
   }
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1440px) {
     width: 375px;
     padding: 6rem 2rem 6rem 2rem;
   }

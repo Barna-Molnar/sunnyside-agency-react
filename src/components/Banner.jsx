@@ -13,7 +13,7 @@ const BannerStyles = styled.div`
     object-fit: cover;
     width: calc(100% / 4);
   }
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1440px) {
     width: 375px;
     flex-wrap: wrap;
     img {
