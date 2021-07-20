@@ -14,7 +14,7 @@ const CardMixinStyles = styled.div`
   align-items: flex-end;
   padding: 0 15rem 4rem 15rem;
   background: url(${(props) => props.bckImg});
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 1438px) {
     background-position: center center;
     padding: 0 0 3rem 0;
     .title-para {

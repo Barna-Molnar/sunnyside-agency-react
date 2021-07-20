@@ -25,7 +25,7 @@ const HeaderStyles = styled.div`
     margin-top: 12rem;
     margin-bottom: 35rem;
   }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 1438px) {
     padding: 0 2rem;
     width: 375px;
     background: url(${HeaderImgMobile}) no-repeat center / cover;

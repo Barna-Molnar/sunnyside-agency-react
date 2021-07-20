@@ -24,7 +24,7 @@ const TestimonialsColumnStyles = styled.div`
     font-size: 15px;
     color: var(--grayish-blue);
   }
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1430px) {
     padding: 0rem;
     width: 100%;
     img {

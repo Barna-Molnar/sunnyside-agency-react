@@ -9,7 +9,7 @@ const CardNoTextStyles = styled.div`
     min-height: 100%;
   }
 
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 1438px) {
   }
 `;
 export default function CardNoText({ bckImg }) {

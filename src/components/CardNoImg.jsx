@@ -41,7 +41,7 @@ const CardStyles = styled.div`
     border-radius: 5px;
     z-index: -100;
   }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 1438px) {
     margin: 0;
     width: 375px;
     text-align: center;
